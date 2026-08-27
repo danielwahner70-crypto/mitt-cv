@@ -1,0 +1,159 @@
+HTML
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Wahnér - Senior Partner & Channel Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen pb-12">
+
+    <!-- Header / Hero Section -->
+    <header class="max-w-4xl mx-auto pt-12 px-6 text-center">
+        <img src="dw.jpg" alt="Daniel Wahnér" class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-indigo-500 shadow-xl mb-4">
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Daniel Wahnér</h1>
+        <p class="text-indigo-400 font-medium text-lg mt-1">Senior Partner & Channel Manager</p>
+        <p class="text-slate-400 text-sm mt-1">Enterprise IT | Cloud & Cybersecurity | Nordic Ecosystems</p>
+        
+        <!-- Contact Links -->
+        <div class="flex flex-wrap justify-center gap-4 mt-6 text-sm text-slate-300">
+            <span><i class="fa-solid fa-location-dot text-indigo-400 mr-2"></i>Stockholm, Sverige</span>
+            <a href="mailto:daniel@adwahntage.se" class="hover:text-indigo-400 transition"><i class="fa-solid fa-envelope text-indigo-400 mr-2"></i>daniel@adwahntage.se</a>
+            <a href="tel:+46706622586" class="hover:text-indigo-400 transition"><i class="fa-solid fa-phone text-indigo-400 mr-2"></i>+46 70 662 25 86</a>
+            <a href="https://linkedin.com/in/daniel-wahnér-a7800046" target="_blank" class="hover:text-indigo-400 transition"><i class="fa-brands fa-linkedin text-indigo-400 mr-2"></i>LinkedIn</a>
+        </div>
+
+        <div class="mt-8 flex justify-center gap-4">
+            <a href="CV_Daniel_Wahner.pdf" download class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-2.5 rounded-lg shadow-lg transition flex items-center gap-2">
+                <i class="fa-solid fa-file-arrow-down"></i> Ladda ner PDF-CV
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-6 mt-12 space-y-10">
+
+        <!-- AI Voice Profile Card -->
+        <section class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 shadow-xl backdrop-blur-sm">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="p-2 bg-indigo-500/20 text-indigo-400 rounded-lg">
+                    <i class="fa-solid fa-robot text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold text-white">Interaktiv AI-Röstprofil</h2>
+                    <p class="text-xs text-slate-400">Klicka nedan för att höra min klonade AI-röst berätta om min bakgrund</p>
+                </div>
+            </div>
+
+            <!-- Audio Player Buttons -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
+                <button onclick="playAudio('audio1')" class="bg-slate-700/60 hover:bg-indigo-600/30 border border-slate-600 hover:border-indigo-500 p-3 rounded-xl text-left transition flex items-center gap-3 group">
+                    <i class="fa-solid fa-circle-play text-indigo-400 group-hover:scale-110 transition text-2xl"></i>
+                    <div>
+                        <div class="text-sm font-semibold text-white">Snabb pitch</div>
+                        <div class="text-xs text-slate-400">15 sekunder presentation</div>
+                    </div>
+                </button>
+
+                <button onclick="playAudio('audio2')" class="bg-slate-700/60 hover:bg-indigo-600/30 border border-slate-600 hover:border-indigo-500 p-3 rounded-xl text-left transition flex items-center gap-3 group">
+                    <i class="fa-solid fa-circle-play text-indigo-400 group-hover:scale-110 transition text-2xl"></i>
+                    <div>
+                        <div class="text-sm font-semibold text-white">Kanal & Säkerhet</div>
+                        <div class="text-xs text-slate-400">Erfarenhet & strategi</div>
+                    </div>
+                </button>
+
+                <button onclick="playAudio('audio3')" class="bg-slate-700/60 hover:bg-indigo-600/30 border border-slate-600 hover:border-indigo-500 p-3 rounded-xl text-left transition flex items-center gap-3 group">
+                    <i class="fa-solid fa-circle-play text-indigo-400 group-hover:scale-110 transition text-2xl"></i>
+                    <div>
+                        <div class="text-sm font-semibold text-white">Varför Daniel?</div>
+                        <div class="text-xs text-slate-400">Drivkraft & framtid</div>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Hidden Audio Elements -->
+            <audio id="audio1" src="pitch.mp3"></audio>
+            <audio id="audio2" src="kanal.mp3"></audio>
+            <audio id="audio3" src="varfor.mp3"></audio>
+        </section>
+
+        <!-- Core Competencies -->
+        <section class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6">
+            <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-layer-group text-indigo-400"></i> Kärnkompetenser
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-slate-300">
+                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Partner & Channel Ecosystem Development (Norden)</div>
+                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Pipeline Generation & Joint Funnel Execution</div>
+                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Cloud, Network & Cybersecurity Infrastructure</div>
+                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Go-To-Market (GTM) & Business Planning</div>
+                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Modern Sales Tech & AI-assisted Workflows</div>
+                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Cross-Functional & Stakeholder Alignment</div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 space-y-6">
+            <h2 class="text-lg font-bold text-white flex items-center gap-2 mb-4">
+                <i class="fa-solid fa-briefcase text-indigo-400"></i> Arbetslivserfarenhet
+            </h2>
+
+            <div class="border-l-2 border-indigo-500/50 pl-4 space-y-1">
+                <div class="flex justify-between items-start flex-wrap">
+                    <h3 class="font-bold text-white">Business Development Manager</h3>
+                    <span class="text-xs text-indigo-400 font-mono">2024 - 2026</span>
+                </div>
+                <p class="text-sm font-medium text-slate-400">Westcon-Comstor</p>
+                <p class="text-xs text-slate-300 mt-2">Drev partner-pipeline och affärsgenomförande i det nordiska återförsäljarekosystemet för enterprise IT-säkerhet och nätverksarkitektur.</p>
+            </div>
+
+            <div class="border-l-2 border-slate-700 pl-4 space-y-1">
+                <div class="flex justify-between items-start flex-wrap">
+                    <h3 class="font-bold text-white">Partner Development Manager</h3>
+                    <span class="text-xs text-slate-400 font-mono">2020 - 2024</span>
+                </div>
+                <p class="text-sm font-medium text-slate-400">Epson</p>
+                <p class="text-xs text-slate-300 mt-2">Ägde end-to-end partnerrelationer och GTM-genomförande i Sverige med fokus på B2B-segmentet och executive relationship building.</p>
+            </div>
+
+            <div class="border-l-2 border-slate-700 pl-4 space-y-1">
+                <div class="flex justify-between items-start flex-wrap">
+                    <h3 class="font-bold text-white">Key Account Manager</h3>
+                    <span class="text-xs text-slate-400 font-mono">2002 - 2020</span>
+                </div>
+                <p class="text-sm font-medium text-slate-400">Avoki</p>
+                <p class="text-xs text-slate-300 mt-2">Ansvarade för nyckelkunder med fokus på retention och expansion inom IT-infrastruktur, moln och managed security services.</p>
+            </div>
+        </section>
+
+        <!-- Certifications & Tech -->
+        <section class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6">
+            <h2 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                <i class="fa-solid fa-certificate text-indigo-400"></i> Certifieringar & Teknik
+            </h2>
+            <div class="flex flex-wrap gap-2 text-xs">
+                <span class="bg-indigo-900/40 text-indigo-300 border border-indigo-700/50 px-3 py-1 rounded-full">Proofpoint Accredited Channel Sales Professional</span>
+                <span class="bg-indigo-900/40 text-indigo-300 border border-indigo-700/50 px-3 py-1 rounded-full">Extreme Networks Associate</span>
+                <span class="bg-slate-700/40 text-slate-300 border border-slate-600/50 px-3 py-1 rounded-full">Palo Alto Networks</span>
+                <span class="bg-slate-700/40 text-slate-300 border border-slate-600/50 px-3 py-1 rounded-full">F5</span>
+                <span class="bg-slate-700/40 text-slate-300 border border-slate-600/50 px-3 py-1 rounded-full">Infoblox</span>
+                <span class="bg-slate-700/40 text-slate-300 border border-slate-600/50 px-3 py-1 rounded-full">Zscaler</span>
+                <span class="bg-slate-700/40 text-slate-300 border border-slate-600/50 px-3 py-1 rounded-full">Vectra</span>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function playAudio(id) {
+            const audios = document.querySelectorAll('audio');
+            audios.forEach(a => { a.pause(); a.currentTime = 0; });
+            const current = document.getElementById(id);
+            if (current) current.play();
+        }
+    </script>
+</body>
+</html>
