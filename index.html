@@ -1,174 +1,209 @@
 HTML
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="sv" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Wahnér - Senior Partner & Channel Manager</title>
+    <title>Daniel Wahnér | Senior Partner & Channel Manager</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans min-h-screen pb-12">
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
 
-    <!-- Header / Hero Section -->
-    <header class="max-w-4xl mx-auto pt-12 px-6 text-center">
-        <div class="w-36 h-36 mx-auto mb-4 relative overflow-hidden rounded-full border-4 border-indigo-500 shadow-xl bg-slate-800 flex items-center justify-center">
-            <img src="dw.jpg" alt="Daniel Wahnér" class="w-full h-full object-cover">
-        </div>
-        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Daniel Wahnér</h1>
-        <p class="text-indigo-400 font-medium text-lg mt-1">Senior Partner & Channel Manager</p>
-        <p class="text-slate-400 text-sm mt-1">Enterprise IT | Cloud & Cybersecurity | Nordic Ecosystems</p>
-        
-        <!-- Contact Links -->
-        <div class="flex flex-wrap justify-center gap-4 mt-6 text-sm text-slate-300">
-            <span><i class="fa-solid fa-location-dot text-indigo-400 mr-2"></i>Stockholm, Sverige</span>
-            <a href="mailto:daniel@adwahntage.se" class="hover:text-indigo-400 transition"><i class="fa-solid fa-envelope text-indigo-400 mr-2"></i>daniel@adwahntage.se</a>
-            <a href="tel:+46706622586" class="hover:text-indigo-400 transition"><i class="fa-solid fa-phone text-indigo-400 mr-2"></i>+46 70 662 25 86</a>
-            <a href="https://linkedin.com/in/daniel-wahnér-a7800046" target="_blank" class="hover:text-indigo-400 transition"><i class="fa-brands fa-linkedin text-indigo-400 mr-2"></i>LinkedIn</a>
-        </div>
-
-        <div class="mt-8 flex justify-center gap-4">
-            <a href="CV_Daniel_Wahner.pdf" download class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-2.5 rounded-lg shadow-lg transition flex items-center gap-2">
-                <i class="fa-solid fa-file-arrow-down"></i> Ladda ner PDF-CV
-            </a>
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <span class="font-bold text-lg tracking-tight text-white">Daniel Wahnér</span>
+            <div class="flex items-center gap-4">
+                <a href="mailto:daniel@adwahntage.se" class="px-4 py-2 text-sm font-medium bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors shadow-lg shadow-blue-500/20">
+                    Kontakta mig
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content Container -->
-    <main class="max-w-4xl mx-auto px-6 mt-12 space-y-10">
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
 
-        <!-- AI Voice Profile Card -->
-        <section class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 shadow-xl backdrop-blur-sm">
+        <!-- Profile / Hero Section -->
+        <section class="flex flex-col md:flex-row gap-8 items-center md:items-start mb-12">
+            <div class="relative group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
+                <img src="profil.jpg" alt="Daniel Wahnér" class="relative w-40 h-40 sm:w-48 sm:h-48 rounded-2xl object-cover shadow-2xl border border-slate-700/50">
+            </div>
+
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Senior Partner & Channel Manager
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-3">
+                    Daniel Wahnér
+                </h1>
+                <p class="text-lg text-slate-300 leading-relaxed mb-6 max-w-2xl">
+                    Över 20 års erfarenhet av IT-försäljning, partnerstrategier och affärsutveckling i Norden. Specialist på att bygga och skala starka ekosystem inom Cloud, nätverk och Cybersecurity.
+                </p>
+
+                <!-- Key Merits Badges -->
+                <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+                    <span class="px-3 py-1 bg-slate-800 border border-slate-700 text-amber-400 text-xs font-semibold rounded-lg flex items-center gap-1.5">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        Årets Säljare
+                    </span>
+                    <span class="px-3 py-1 bg-slate-800 border border-slate-700 text-amber-400 text-xs font-semibold rounded-lg flex items-center gap-1.5">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        Guldklubben
+                    </span>
+                    <span class="px-3 py-1 bg-slate-800 border border-slate-700 text-blue-400 text-xs font-semibold rounded-lg flex items-center gap-1.5">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        Strategiska Rådet
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voice Profile Section -->
+        <div class="mb-12 bg-slate-800/80 backdrop-blur border border-slate-700/50 rounded-2xl p-6 sm:p-8 shadow-xl">
             <div class="flex items-center gap-3 mb-4">
-                <div class="p-2 bg-indigo-500/20 text-indigo-400 rounded-lg">
-                    <i class="fa-solid fa-robot text-xl"></i>
+                <div class="p-3 bg-blue-500/10 rounded-xl border border-blue-500/20 text-blue-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                    </svg>
                 </div>
                 <div>
-                    <h2 class="text-xl font-bold text-white">Interaktiv AI-Röstprofil</h2>
-                    <p class="text-xs text-slate-400">Klicka nedan för att höra min klonade AI-röst berätta om min bakgrund</p>
+                    <h2 class="text-xl font-bold text-slate-100">Interaktiv Röstprofil</h2>
+                    <p class="text-sm text-slate-400">Klicka på knapparna nedan för att höra mig berätta kort om min bakgrund och vad jag kan tillföra.</p>
                 </div>
             </div>
 
-            <!-- Audio Player Buttons -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
-                <button onclick="playAudio('audio1')" class="bg-slate-700/60 hover:bg-indigo-600/30 border border-slate-600 hover:border-indigo-500 p-3 rounded-xl text-left transition flex items-center gap-3 group">
-                    <i class="fa-solid fa-circle-play text-indigo-400 group-hover:scale-110 transition text-2xl"></i>
-                    <div>
-                        <div class="text-sm font-semibold text-white">Snabb pitch</div>
-                        <div class="text-xs text-slate-400">Presentation</div>
-                    </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6">
+                <button onclick="playAudio('pitch.mp3')" class="flex items-center justify-center gap-2 px-4 py-3 bg-slate-700/50 hover:bg-slate-700 border border-slate-600/50 rounded-xl text-slate-200 text-sm font-medium transition-all group">
+                    <svg class="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"></path>
+                    </svg>
+                    Snabb pitch
                 </button>
-
-                <button onclick="playAudio('audio2')" class="bg-slate-700/60 hover:bg-indigo-600/30 border border-slate-600 hover:border-indigo-500 p-3 rounded-xl text-left transition flex items-center gap-3 group">
-                    <i class="fa-solid fa-circle-play text-indigo-400 group-hover:scale-110 transition text-2xl"></i>
-                    <div>
-                        <div class="text-sm font-semibold text-white">Kanal & Säkerhet</div>
-                        <div class="text-xs text-slate-400">Erfarenhet & strategi</div>
-                    </div>
+                <button onclick="playAudio('kanal.mp3')" class="flex items-center justify-center gap-2 px-4 py-3 bg-slate-700/50 hover:bg-slate-700 border border-slate-600/50 rounded-xl text-slate-200 text-sm font-medium transition-all group">
+                    <svg class="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"></path>
+                    </svg>
+                    Kanal & Säkerhet
                 </button>
-
-                <button onclick="playAudio('audio3')" class="bg-slate-700/60 hover:bg-indigo-600/30 border border-slate-600 hover:border-indigo-500 p-3 rounded-xl text-left transition flex items-center gap-3 group">
-                    <i class="fa-solid fa-circle-play text-indigo-400 group-hover:scale-110 transition text-2xl"></i>
-                    <div>
-                        <div class="text-sm font-semibold text-white">Varför Daniel?</div>
-                        <div class="text-xs text-slate-400">Drivkraft & resultat</div>
-                    </div>
+                <button onclick="playAudio('varfor.mp3')" class="flex items-center justify-center gap-2 px-4 py-3 bg-slate-700/50 hover:bg-slate-700 border border-slate-600/50 rounded-xl text-slate-200 text-sm font-medium transition-all group">
+                    <svg class="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"></path>
+                    </svg>
+                    Varför Daniel?
                 </button>
             </div>
+            
+            <!-- Hidden Audio Element -->
+            <audio id="audioPlayer" class="hidden"></audio>
+        </div>
 
-            <!-- Hidden Audio Elements -->
-            <audio id="audio1" src="pitch.mp3"></audio>
-            <audio id="audio2" src="kanal.mp3"></audio>
-            <audio id="audio3" src="varfor.mp3"></audio>
-        </section>
+        <!-- Experience Timeline -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-white mb-6">Yrkeserfarenhet</h2>
+            <div class="space-y-6">
 
-        <!-- Core Competencies -->
-        <section class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6">
-            <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                <i class="fa-solid fa-layer-group text-indigo-400"></i> Kärnkompetenser
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-slate-300">
-                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• P&L & Budgetansvar (50+ MSEK)</div>
-                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Prisbelönt KAM (Årets Säljare & Guldklubben)</div>
-                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Partner & Channel Ecosystem Development (Norden)</div>
-                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Pipeline Generation & Joint Funnel Execution</div>
-                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Cloud, Network & Cybersecurity Infrastructure</div>
-                <div class="bg-slate-900/50 p-3 rounded-lg border border-slate-800">• Go-To-Market (GTM) & Kommersiell Strategi</div>
-            </div>
-        </section>
-
-        <!-- Work Experience -->
-        <section class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6 space-y-6">
-            <h2 class="text-lg font-bold text-white flex items-center gap-2 mb-4">
-                <i class="fa-solid fa-briefcase text-indigo-400"></i> Arbetslivserfarenhet
-            </h2>
-
-            <div class="border-l-2 border-indigo-500 pl-4 space-y-1">
-                <div class="flex justify-between items-start flex-wrap">
-                    <h3 class="font-bold text-white">Senior Säljkonsult & Partner Advisor</h3>
-                    <span class="text-xs text-indigo-400 font-mono">2026 - Nuvarande</span>
+                <!-- Current Role -->
+                <div class="p-6 bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Senior Säljkonsult & Partner Advisor</h3>
+                        <span class="text-xs text-blue-400 font-mono">2026 – Nuvarande</span>
+                    </div>
+                    <div class="text-sm text-slate-400 font-medium mb-3">Nordic Adwahntage AB</div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Stöttar B2B-teknikbolag och aktörer inom cybersecurity med GTM-strategier, partneraktivering och pipeline-generering. Öppen för både strategiska konsultuppdrag och rätt seniora ledar-/partnerroll inom Enterprise IT.
+                    </p>
                 </div>
-                <p class="text-sm font-medium text-slate-400">Nordic Adwahntage AB</p>
-                <p class="text-xs text-slate-300 mt-2">Stöttar B2B-teknikbolag och aktörer inom cybersecurity med GTM-strategier, partneraktivering och pipeline-generering. Öppen för både strategiska konsultuppdrag och rätt seniora ledar-/partnerroll inom Enterprise IT.</p>
-            </div>
 
-            <div class="border-l-2 border-indigo-500/50 pl-4 space-y-1">
-                <div class="flex justify-between items-start flex-wrap">
-                    <h3 class="font-bold text-white">Business Development Manager</h3>
-                    <span class="text-xs text-slate-400 font-mono">2024 - 2026</span>
+                <!-- Westcon-Comstor -->
+                <div class="p-6 bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Business Development Manager – Cybersecurity</h3>
+                        <span class="text-xs text-slate-400 font-mono">2024 – 2025</span>
+                    </div>
+                    <div class="text-sm text-slate-400 font-medium mb-3">Westcon-Comstor</div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Ansvarade för affärsutveckling och partnerstrategier kring ledande säkerhetsvarumärken som Palo Alto Networks och Proofpoint. Drev certifieringsprogram, partneraktivering och strategisk försäljning i Norden.
+                    </p>
                 </div>
-                <p class="text-sm font-medium text-slate-400">Westcon-Comstor</p>
-                <p class="text-xs text-slate-300 mt-2">Drev partner-pipeline och affärsgenomförande i det nordiska återförsäljarekosystemet för enterprise IT-säkerhet och nätverksarkitektur.</p>
-            </div>
 
-            <div class="border-l-2 border-slate-700 pl-4 space-y-1">
-                <div class="flex justify-between items-start flex-wrap">
-                    <h3 class="font-bold text-white">Partner Development Manager</h3>
-                    <span class="text-xs text-slate-400 font-mono">2020 - 2024</span>
+                <!-- Epson -->
+                <div class="p-6 bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Partner Development Manager (PDM)</h3>
+                        <span class="text-xs text-slate-400 font-mono">2020 – 2024</span>
+                    </div>
+                    <div class="text-sm text-slate-400 font-medium mb-3">Epson Europe B.V.</div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Totalt ansvar för strategiska återförsäljare och distributörer i Sverige. Utvecklade gemensamma affärsplaner, drev B2B-tillväxt och etablerade långsiktiga partnerrelationer på C-level.
+                    </p>
                 </div>
-                <p class="text-sm font-medium text-slate-400">Epson</p>
-                <p class="text-xs text-slate-300 mt-2">Totalansvar för Epsons projektorverksamhet i Sverige med P&L- och budgetansvar på ca 50 MSEK per år. Drev end-to-end partnerrelationer, storkundsaffärer och GTM-strategi inom B2B.</p>
-            </div>
 
-            <div class="border-l-2 border-slate-700 pl-4 space-y-1">
-                <div class="flex justify-between items-start flex-wrap">
-                    <h3 class="font-bold text-white">Key Account Manager</h3>
-                    <span class="text-xs text-slate-400 font-mono">2002 - 2020</span>
+                <!-- Avoki -->
+                <div class="p-6 bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Key Account Manager & Senior Säljare</h3>
+                        <span class="text-xs text-slate-400 font-mono">2002 – 2020</span>
+                    </div>
+                    <div class="text-sm text-slate-400 font-medium mb-3">Avoki (tidigare Xite Communication)</div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Byggde och utvecklade storkundsrelationer inom IT-infrastruktur, molntjänster och kommunikationslösningar. Tilldelad utmärkelserna <strong>Årets Säljare</strong> och plats i <strong>Guldklubben</strong> samt <strong>Strategiska Rådet</strong>.
+                    </p>
                 </div>
-                <p class="text-sm font-medium text-slate-400">Avoki (tidigare Office Management)</p>
-                <p class="text-xs text-slate-300 mt-2">Etablerade mig som bolagets bästsäljande Key Account Manager med ansvar för komplexa storkundsrelationer, nyförsäljning och långsiktig tillväxt inom IT-infrastruktur, molntjänster och managed services.</p>
-                <div class="flex flex-wrap gap-2 mt-2">
-                    <span class="bg-amber-500/10 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded text-[11px] font-medium"><i class="fa-solid fa-trophy mr-1"></i>Årets Säljare</span>
-                    <span class="bg-amber-500/10 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded text-[11px] font-medium"><i class="fa-solid fa-star mr-1"></i>Guldklubben</span>
-                    <span class="bg-indigo-500/10 text-indigo-300 border border-indigo-500/30 px-2 py-0.5 rounded text-[11px] font-medium"><i class="fa-solid fa-user-tie mr-1"></i>Medlem i Strategiska Rådet</span>
-                </div>
+
             </div>
         </section>
 
-        <!-- Certifications & Tech -->
-        <section class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-6">
-            <h2 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
-                <i class="fa-solid fa-certificate text-indigo-400"></i> Certifieringar & Teknik
-            </h2>
-            <div class="flex flex-wrap gap-2 text-xs">
-                <span class="bg-indigo-900/40 text-indigo-300 border border-indigo-700/50 px-3 py-1 rounded-full">Proofpoint Accredited Channel Sales Professional</span>
-                <span class="bg-indigo-900/40 text-indigo-300 border border-indigo-700/50 px-3 py-1 rounded-full">Extreme Networks Associate</span>
-                <span class="bg-slate-700/40 text-slate-300 border border-slate-600/50 px-3 py-1 rounded-full">Palo Alto Networks</span>
-                <span class="bg-slate-700/40 text-slate-300 border border-slate-600/50 px-3 py-1 rounded-full">F5</span>
-                <span class="bg-slate-700/40 text-slate-300 border border-slate-600/50 px-3 py-1 rounded-full">Infoblox</span>
-                <span class="bg-slate-700/40 text-slate-300 border border-slate-600/50 px-3 py-1 rounded-full">Zscaler</span>
-                <span class="bg-slate-700/40 text-slate-300 border border-slate-600/50 px-3 py-1 rounded-full">Vectra</span>
+        <!-- Certifications & Tech Focus -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div class="p-6 bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                <h3 class="text-lg font-bold text-white mb-4">Tekniskt Ekosystem</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-slate-700/50 text-slate-200 text-xs rounded-md border border-slate-600/50">Palo Alto Networks</span>
+                    <span class="px-3 py-1 bg-slate-700/50 text-slate-200 text-xs rounded-md border border-slate-600/50">Proofpoint</span>
+                    <span class="px-3 py-1 bg-slate-700/50 text-slate-200 text-xs rounded-md border border-slate-600/50">Extreme Networks</span>
+                    <span class="px-3 py-1 bg-slate-700/50 text-slate-200 text-xs rounded-md border border-slate-600/50">F5</span>
+                    <span class="px-3 py-1 bg-slate-700/50 text-slate-200 text-xs rounded-md border border-slate-600/50">Infoblox</span>
+                    <span class="px-3 py-1 bg-slate-700/50 text-slate-200 text-xs rounded-md border border-slate-600/50">Zscaler</span>
+                    <span class="px-3 py-1 bg-slate-700/50 text-slate-200 text-xs rounded-md border border-slate-600/50">Vectra</span>
+                </div>
+            </div>
+
+            <div class="p-6 bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                <h3 class="text-lg font-bold text-white mb-4">Språk & Navigation</h3>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> <strong>Svenska:</strong> Modersmål</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> <strong>Engelska:</strong> Flytande i skrift och tal</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> <strong>Polska:</strong> Grundläggande kunskaper</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> <strong>Nautisk kompetens:</strong> Förarintyg & Kustskepparintyg</li>
+                </ul>
             </div>
         </section>
 
     </main>
 
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        <div class="max-w-5xl mx-auto px-4">
+            <p>© 2026 Daniel Wahnér • Nordic Adwahntage AB</p>
+        </div>
+    </footer>
+
+    <!-- Audio Player Script -->
     <script>
-        function playAudio(id) {
-            const audios = document.querySelectorAll('audio');
-            audios.forEach(a => { a.pause(); a.currentTime = 0; });
-            const current = document.getElementById(id);
-            if (current) current.play();
+        function playAudio(filename) {
+            const player = document.getElementById('audioPlayer');
+            player.src = filename;
+            player.play().catch(e => {
+                console.log("Uppspelning kunde inte startas automatisk:", e);
+                alert("Kontrollera att MP3-filen ligger i samma mapp på GitHub!");
+            });
         }
     </script>
 </body>
